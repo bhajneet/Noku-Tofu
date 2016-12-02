@@ -1,0 +1,152 @@
+## Based on Radience popup style by nale12
+
+## Rows that begins with # are comments
+## Change the name if you make a new style
+name=Foyu
+
+## Remove the # in front of a setting to start using it.
+## All the commented options in this file has the default value.
+
+## It's possible to make styles intended for certain themes.
+## only_for_themes option is a comma separted list of the
+## themes that are meant to use it. If DockbarX uses
+## a theme not listed here, the style won't
+## show up in the list over styles in preference dialog.
+## Use this only if you think your popup_style makes little
+## or no sense in other themes.
+#only_for_themes=COMMA_SEPARATED_LIST_OF_THEMES_HERE
+
+## To add a background picture to the style simply add a file
+## named background.png to the arcive. The picture is automaticly
+## tiled to fill the popup. If the picture has transparency it can
+## be used together with gradients and the background color. 
+## Keep the file as small as possible.
+
+######## Popup #########
+## Thickness of the border (in pixels)
+border_width=14
+
+## The color and alpha for the border of the popup
+## Alpha goes from 0 (completely transparent) to 100 (completely opaque)
+## Remember that this alpha always in 100 if a non-composited window manager is used.
+border_color="#313436"
+border_aplha=100
+
+## If border_color2 is used that color is the outer border color
+## while border_color becomes the inner border color.
+border_color2="#313436"
+border_alpha2=100
+
+## The radius of the corner roundness (in pixels).
+popup_roundness=0
+
+## The amount of pixels around the actual content of the popup
+## This number includes the border.
+popup_padding=0
+
+## Size of the arrow that points towards the application button (in pixels).
+arrow_size=0
+## The distance between the popup and the application button.
+## A negative number makes the arrow overlap the application button.
+popup_distance=0
+
+## Padding and distance for the locked list
+locked_list_padding=5
+locked_list_distance=0
+
+## Linear gradients
+## You can use up to three linear gradients at once. Just copy-past and
+## change thenumber at the end of gradient to 2 or 3 to set the options for
+## the second or third gradient.
+## To use a linear gradient, just set use_popup_linear_gradient to 1.
+use_popup_linear_gradient1=1
+## The angle sets the direction of the linear gradient in degrees.
+## An angle of 0 will go from left to right, 180 will go from right to left,
+## 90 will go from bottom to top and -90 from top to bottom.
+popup_linear_gradient1_angle=-90
+
+## Start and stop values tells at what point the gradient the gradient will start
+## and stop. To make it work more or less the same no matter the size and ratio 
+## of the popup, it's counted along one of the diagonals of the popup_style,
+## which one depends on the angle. 
+## If for example the start value is set to 25 and stop to 90,it means 
+## that along the first 25 % of the diagonal only the start color will be shown. 
+## After that the gradient will start to blend into the stop color and after
+## 90 % of the the diagonal only stop color will be shown.
+popup_linear_gradient1_start=0
+popup_linear_gradient1_start_color="#313436"
+popup_linear_gradient1_start_alpha=100
+popup_linear_gradient1_stop=100
+popup_linear_gradient1_stop_color="#313436"
+popup_linear_gradient1_stop_alpha=100
+
+## Radial gradients
+## You can use up to three radial gradients at once and/or combine them with linear 
+## gradients. Add the lines and change the number. Radial gradients are experimental
+## and might rewritten completely later. Keep in mind that they use absolute values
+## so they wont scale up when the popup gets bigger.
+## 
+## To use a radial gradient, just set use_popup_radial_gradient to 1.
+#use_popup_radial_gradient1=0
+## Radial gradients goes from one circle (x1, y1, radius1) to another (x2,y2, radius2).
+## The values are comma separated.
+##popup_radial_gradient1=50,30,10,50,30,100
+
+## It starts from color1 at circle1 and goes to color2 at cirlce2
+#popup_radial_gradient1_color1="#FFFFFF"
+#popup_radial_gradient1_alpha1=25
+#popup_radial_gradient1_color2="#FFFFFF"
+#popup_radial_gradient1_alpha2=0
+
+######## Window Item ###########
+## The border color and alpha of the window item
+## Alpha goes from 0 (completely transparent) to 100 (completely opaque)
+## This alpha value works in both composited and non-composited window managers.
+window_item_border_color="#FFFFFF"
+window_item_border_alpha=12
+
+## The radius of the corner roundness for window items (in pixels).
+window_item_roundness=0
+
+## The padding of the window item left and right (lr) and top and bottom (td)
+window_item_lr_padding=7
+window_item_td_padding=14
+
+## Alpha for the window item of the active window. 
+## The is color set from preference not the style.
+active_item_alpha=10
+
+## The border for the window item of the active window. 
+active_item_border_color="#009688"
+active_item_border_alpha=25
+
+## Color and alpha for the window items of windows that need attention.
+needs_attention_item_color="#FF0000"
+needs_attention_item_alpha=30
+
+
+######## Menu Item #############
+## The menu item border color and alpha
+menu_item_border_color="#ffffff"
+menu_item_border_alpha=50
+
+## The radius of the corner roundness for menu items (in pixels).
+menu_item_roundness=0
+
+## The padding of the menu item left and right (lr) and top and bottom (td)
+menu_item_td_padding=30
+menu_item_lr_padding=3
+
+
+
+######## Close button ###########
+## The size of the button
+close_button_size=24
+
+## The close buttons can be styled either by adding a folder called
+## closebutton to the archive of the style and adding three png pictures
+## named normal.png, hover.png and pressed.png to it (the width
+## and height of the pictures should be the same as close_button_size)
+## or by changing the settings below. (The pictures overrides the settings.)
+
+
